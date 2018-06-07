@@ -33,11 +33,11 @@ public class TarefaController {
         tarefaRepository.save(tarefa);
 
         //redireciona para a mesma página
-        return "redirect:/listaTarefas";
+        return "redirect:/todasTarefas";
     }
 
     //Read
-    @RequestMapping(value="/listaTarefas", method=RequestMethod.GET)
+    @RequestMapping(value="/todasTarefas", method=RequestMethod.GET)
     public ModelAndView mostraTodasTarefas(){
         ModelAndView mv = new ModelAndView("index");
         Collection<Tarefa> tarefas = tarefaRepository.findAll();
