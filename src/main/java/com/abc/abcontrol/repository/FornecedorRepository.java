@@ -1,7 +1,6 @@
 package com.abc.abcontrol.repository;
 
 import com.abc.abcontrol.model.Fornecedor;
-import java.sql.Timestamp;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
@@ -23,7 +22,7 @@ public class FornecedorRepository{
         fornecedores = new HashMap<Integer, Fornecedor>(){
 
             {
-                put(1, new Fornecedor(1, "Juca Materiais LTDA", "Juca Materiais", "07.590.233/0001-30", Timestamp.valueOf("2000-05-15 00:00:00"), "Júlio de Castilhos, 1234, Porto Alegre - RS", "51 3231-1941", "", "juca@email.com"));
+                put(1, new Fornecedor(1, "Juca Materiais LTDA", "Juca Materiais", "07.590.233/0001-30", "2000-05-15", "Júlio de Castilhos, 1234, Porto Alegre - RS", "51 3231-1941", "", "juca@email.com"));
             }
         };
     }

@@ -29,12 +29,12 @@ public class FornecedorController {
     @RequestMapping(value="/cadastrarFornecedor", method=RequestMethod.POST)
     public String formCadastrarFornecedor_cadastrar(Fornecedor fornecedor) {
         fornecedorRepository.save(fornecedor);
-        return "redirect:/consultarFornecedores";
+        return "redirect:/todosFornecedores";
     }
 
-    @RequestMapping(value="/consultarFornecedores", method=RequestMethod.GET)
+    @RequestMapping(value="/todosFornecedores", method=RequestMethod.GET)
     public ModelAndView mostraTodosFornecedores(){
-        ModelAndView mv = new ModelAndView("index");
+        ModelAndView mv = new ModelAndView("fornecedor/consultarFornecedores");
         Collection<Fornecedor> fornecedores = fornecedorRepository.findAll();
         mv.addObject("fornecedores", fornecedores);
         return mv;

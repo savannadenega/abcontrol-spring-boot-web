@@ -10,7 +10,7 @@
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Todas Tarefas</title>
+    <title>Todos materiais</title>
 </head>
 <body>
 
@@ -22,7 +22,7 @@
             <li><b><a class="orange-text text-darken-2" href="/todasTarefas">Minhas Tarefas</a></b></li>
             <li><b><a class="orange-text text-darken-2" href="">Projetos</a></b></li>
             <li><b><a class="orange-text text-darken-2" href="/todosMateriais">Ferramentas e Materiais</a></b></li>
-			<li><b><a class="orange-text text-darken-2" href="/todosFornecedores">Fornecedores</a></b></li>
+            <li><b><a class="orange-text text-darken-2" href="/todosFornecedores">Fornecedores</a></b></li>
             <li><b><a class="orange-text text-darken-2" href="">Gerenciamento de Propostas</a></b></li>
             <li><b><a class="orange-text text-darken-2" href="">Configurações</a></b></li>
             <li><a class="orange-text text-darken-2" href=""><i class="orange-text text-darken-2 material-icons left">person</i>Julia</a></li>
@@ -30,21 +30,28 @@
     </div>
 </nav>
 
-    <h3 style="padding: 0px 0px 10px 40px;">Todas Tarefas</h3>
-    <h3 style="padding: 0px 0px 40px 40px;"><a href="/cadastrarTarefa" class="orange darken-2 waves-effect waves-light btn"><i class="material-icons left">add_circle_outline</i>Cadastrar Tarefa</a></h3>
+
+    <h3 style="padding: 0px 0px 10px 40px;">Todos materiais</h3>
+    <h3 style="padding: 0px 0px 40px 40px;"><a href="/cadastrarMaterial" class="orange darken-2 waves-effect waves-light btn"><i class="material-icons left">add_circle_outline</i>Cadastrar material</a></h3>
     <table class="container">
 
         <thead>
-            <th>Id</th>
-            <th>Nome</th>
-            <th>Descricao</th>
+            <th>id</th>
+            <th>Descrição</th>
+            <th>Tipo</th>
+            <th>Unidade</th>
+            <th>Valor unitário</th>
+            <th>Fornecedor</th>
         </thead>
 
         <tbody>
-            <tr th:each="tarefa : ${tarefas}">
-                <td><span th:text="${tarefa.id}"></span></td>
-                <td><span th:text="${tarefa.nome}"></span></td>
-                <td><span th:text="${tarefa.descricao}"></span></td>
+            <tr th:each="material : ${materiais}">
+                <td><span th:text="${material.id}"></span></td>
+                <td><span th:text="${material.descricao}"></span></td>
+                <td><span th:text="${material.tipoMaterial}"></span></td>
+                <td><span th:text="${material.tipoUnidade}"></span></td>
+                <td><span th:text="${material.valorUnidade}"></span></td>
+                <td><span th:text="${material.fornecedor}"></span></td>
             </tr>
         </tbody>
 

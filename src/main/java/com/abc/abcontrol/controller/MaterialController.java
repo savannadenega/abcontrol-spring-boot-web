@@ -34,7 +34,7 @@ public class MaterialController {
 
     @RequestMapping(value="/todosMateriais", method=RequestMethod.GET)
     public ModelAndView mostraTodosMateriais(){
-        ModelAndView mv = new ModelAndView("index");
+        ModelAndView mv = new ModelAndView("material/consultarMateriais");
         Collection<Material> materiais = materialRepository.findAll();
         mv.addObject("materiais", materiais);
         return mv;

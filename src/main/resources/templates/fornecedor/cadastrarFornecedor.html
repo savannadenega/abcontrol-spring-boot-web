@@ -10,29 +10,28 @@
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Tarefas</title>
+    <title>Cadastrar fornecedor</title>
 </head>
 <body>
 
 <nav>
     <div class="grey lighten-2 nav-wrapper">
-        <img style="max-height: 56px; width: auto; height: auto;" src="images/Logo ABControl - Sem fundo.png" alt="ABControl"/>
+        <img style="max-height: 56px; width: auto; height: auto;" src="images/Logo ABControl - Sem fundo.png" alt="ABControl" />
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><b><a class="orange-text text-darken-2" href="/consultarTarefas">Todas Tarefas</a></b></li>
-            <li><b><a class="orange-text text-darken-2" href="/consultarTarefas">Minhas Tarefas</a></b></li>
+            <li><b><a class="orange-text text-darken-2" href="/todasTarefas">Todas Tarefas</a></b></li>
+            <li><b><a class="orange-text text-darken-2" href="/todasTarefas">Minhas Tarefas</a></b></li>
             <li><b><a class="orange-text text-darken-2" href="">Projetos</a></b></li>
-            <li><b><a class="orange-text text-darken-2" href="">Ferramentas e Materiais</a></b></li>
-            <li><b><a class="orange-text text-darken-2" href="/consultarFornecedores">Fornecedores</a></b></li>
+            <li><b><a class="orange-text text-darken-2" href="/todosMateriais">Ferramentas e Materiais</a></b></li>
+			<li><b><a class="orange-text text-darken-2" href="/todosFornecedores">Fornecedores</a></b></li>
             <li><b><a class="orange-text text-darken-2" href="">Gerenciamento de Propostas</a></b></li>
             <li><b><a class="orange-text text-darken-2" href="">Configurações</a></b></li>
-            <li><a class="orange-text text-darken-2" href=""><i class="orange-text text-darken-2 material-icons left">person</i>Julia</a>
-            </li>
+            <li><a class="orange-text text-darken-2" href=""><i class="orange-text text-darken-2 material-icons left">person</i>Julia</a></li>
         </ul>
     </div>
 </nav>
 
 <h3 style="padding: 0px 0px 10px 40px;">Cadastro de Fornecedores</h3>
-<h3 style="padding: 0px 0px 40px 40px;"><a href="/consultarFornecedores" class="orange darken-2 waves-effect waves-light btn"><i
+<h3 style="padding: 0px 0px 40px 40px;"><a href="/todosFornecedores" class="orange darken-2 waves-effect waves-light btn"><i
         class="material-icons left">format_list_bulleted</i>Todas os Fornecedores</a></h3>
 
 <form class="container" method="post">
@@ -43,25 +42,25 @@
         <div class="input-field col s9">
             Razão social: <input type="text" value="" name="razaoSocial"/>
         </div>
-        <div class="input-field col s9">
+        <div class="input-field col s12">
             Nome fantasia: <input type="text" value="" name="nomeFantasia"/>
         </div>
-        <div class="input-field col s9">
+        <div class="input-field col s12">
             CNPJ: <input type="text" value="" name="cnpj"/>
         </div>
-        <div class="input-field col s9">
+        <div class="input-field col s12">
             Data de fundação: <input type="text" value="" name="dataFundacao"/>
         </div>
-        <div class="input-field col s9">
+        <div class="input-field col s12">
             Endereço: <input type="text" value="" name="endereco"/>
         </div>
-        <div class="input-field col s9">
+        <div class="input-field col s12">
             Telefone principal: <input type="text" value="" name="telefonePrincipal"/>
         </div>
-        <div class="input-field col s9">
+        <div class="input-field col s12">
             Telefone secundário: <input type="text" value="" name="telefoneSecundario"/>
         </div>
-        <div class="input-field col s9">
+        <div class="input-field col s12">
             E-mail: <input type="text" value="" name="eMail"/>
         </div>
     </div>

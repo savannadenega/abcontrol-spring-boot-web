@@ -10,7 +10,7 @@
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Todas Tarefas</title>
+    <title>Todos fornecedores</title>
 </head>
 <body>
 
@@ -30,21 +30,33 @@
     </div>
 </nav>
 
-    <h3 style="padding: 0px 0px 10px 40px;">Todas Tarefas</h3>
-    <h3 style="padding: 0px 0px 40px 40px;"><a href="/cadastrarTarefa" class="orange darken-2 waves-effect waves-light btn"><i class="material-icons left">add_circle_outline</i>Cadastrar Tarefa</a></h3>
+    <h3 style="padding: 0px 0px 10px 40px;">Todos fornecedores</h3>
+    <h3 style="padding: 0px 0px 40px 40px;"><a href="/cadastrarFornecedor" class="orange darken-2 waves-effect waves-light btn"><i class="material-icons left">add_circle_outline</i>Cadastrar fornecedor</a></h3>
     <table class="container">
 
         <thead>
-            <th>Id</th>
-            <th>Nome</th>
-            <th>Descricao</th>
+            <th>id</th>
+            <th>Razão social</th>
+            <th>Nome fantasia</th>
+            <th>CNPJ</th>
+            <th>Data fundação</th>
+            <th>Endereço</th>
+            <th>Tel. princip.</th>
+            <th>Tel. secund.</th>
+            <th>E-mail</th>
         </thead>
 
         <tbody>
-            <tr th:each="tarefa : ${tarefas}">
-                <td><span th:text="${tarefa.id}"></span></td>
-                <td><span th:text="${tarefa.nome}"></span></td>
-                <td><span th:text="${tarefa.descricao}"></span></td>
+            <tr th:each="fornecedor : ${fornecedores}">
+                <td><span th:text="${fornecedor.id}"></span></td>
+                <td><span th:text="${fornecedor.razaoSocial}"></span></td>
+                <td><span th:text="${fornecedor.nomeFantasia}"></span></td>
+                <td><span th:text="${fornecedor.cnpj}"></span></td>
+                <td><span th:text="${fornecedor.dataFundacao}"></span></td>
+                <td><span th:text="${fornecedor.endereco}"></span></td>
+                <td><span th:text="${fornecedor.telefonePrincipal}"></span></td>
+                <td><span th:text="${fornecedor.telefoneSecundario}"></span></td>
+                <td><span th:text="${fornecedor.eMail}"></span></td>
             </tr>
         </tbody>
 

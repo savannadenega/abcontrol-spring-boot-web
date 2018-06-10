@@ -5,8 +5,6 @@
  */
 package com.abc.abcontrol.model;
 
-import java.sql.Timestamp;
-
 /**
  *
  * @author Cássio Linden
@@ -16,13 +14,13 @@ public class Fornecedor {
     private String razaoSocial;
     private String nomeFantasia;
     private String cnpj;
-    private Timestamp dataFundacao;
+    private String dataFundacao;
     private String endereco;
     private String telefonePrincipal;
     private String telefoneSecundario;
     private String eMail;
 
-    public Fornecedor(int id, String razaoSocial, String nomeFantasia, String cnpj, Timestamp dataFundacao, String endereco, String telefonePrincipal, String telefoneSecundario, String eMail) {
+    public Fornecedor(int id, String razaoSocial, String nomeFantasia, String cnpj, String dataFundacao, String endereco, String telefonePrincipal, String telefoneSecundario, String eMail) {
         this.id = id;
         this.razaoSocial = razaoSocial;
         this.nomeFantasia = nomeFantasia;
@@ -33,6 +31,12 @@ public class Fornecedor {
         this.telefoneSecundario = telefoneSecundario;
         this.eMail = eMail;
     }
+
+    @Override
+    public String toString() {
+        return  id + " - " + razaoSocial;
+    }
+    
     
     public int getId() {
         return id;
@@ -66,11 +70,11 @@ public class Fornecedor {
         this.cnpj = cnpj;
     }
 
-    public Timestamp getDataFundacao() {
+    public String getDataFundacao() {
         return dataFundacao;
     }
 
-    public void setDataFundacao(Timestamp dataFundacao) {
+    public void setDataFundacao(String dataFundacao) {
         this.dataFundacao = dataFundacao;
     }
 

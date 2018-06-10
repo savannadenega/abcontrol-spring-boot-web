@@ -35,8 +35,8 @@ public class Material {
         this.id = id;
     }
 
-    public Fornecedor getFornecedor() {
-        return fornecedor;
+    public String getFornecedor() {
+        return String.valueOf(fornecedor);
     }
 
     public void setFornecedor(Fornecedor fornecedor) {
