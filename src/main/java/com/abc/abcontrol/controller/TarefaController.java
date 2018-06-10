@@ -12,6 +12,7 @@ import java.util.Collection;
 
 //Create, Read, Update e Delete
 @Controller
+@RequestMapping(value="/tarefa")
 public class TarefaController {
 
     @Autowired
@@ -22,7 +23,7 @@ public class TarefaController {
     public String formCadastrarTarefa_carregar() {
 
         //retorna a view formCadastrarTarefa.xml que criamos
-        return "tarefa/cadastrarTarefa";
+        return "/tarefa/cadastrarTarefa";
     }
 
     //Create
@@ -33,7 +34,7 @@ public class TarefaController {
         tarefaRepository.save(tarefa);
 
         //redireciona para a mesma página
-        return "redirect:/todasTarefas";
+        return "redirect:/tarefa/todasTarefas";
     }
 
     //Read
@@ -44,6 +45,5 @@ public class TarefaController {
         mv.addObject("tarefas", tarefas);
         return mv;
     }
-
 
 }

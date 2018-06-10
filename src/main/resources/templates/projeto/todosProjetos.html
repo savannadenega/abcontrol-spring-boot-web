@@ -10,8 +10,7 @@
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Todas Tarefas</title>
-
+    <title>Projetos</title>
 </head>
 <body>
 
@@ -30,22 +29,34 @@
         </div>
     </nav>
 
-    <h3 style="padding: 0px 0px 10px 40px;">Todas Tarefas</h3>
-    <h3 style="padding: 0px 0px 40px 40px;"><a href="/tarefa/cadastrarTarefa" class="orange darken-2 waves-effect waves-light btn"><i class="material-icons left">add_circle_outline</i>Cadastrar
-    Tarefa</a></h3>
-    <table class="container">
+    <h3 style="padding: 0px 0px 10px 40px;">Projetos</h3>
+
+    <h3 style="padding: 0px 0px 40px 40px;"><a href="/projeto/cadastrarProjeto" class="orange darken-2 waves-effect waves-light btn"><i class="material-icons left">add_circle_outline</i>Cadastrar
+    Projeto</a></h3>
+
+    <table style="padding: 0px 0px 50px 0px" class="container">
 
         <thead>
             <th>Id</th>
             <th>Nome</th>
-            <th>Descricao</th>
+            <th>Tipo Projeto</th>
+            <th>Status Projeto</th>
+            <th>Data Inicial</th>
+            <th>Previsão Término</th>
+            <th>Deletar</th>
+            <th>Editar</th>
         </thead>
 
         <tbody>
-            <tr th:each="tarefa : ${tarefas}">
-                <td><span th:text="${tarefa.id}"></span></td>
-                <td><span th:text="${tarefa.nome}"></span></td>
-                <td><span th:text="${tarefa.descricao}"></span></td>
+            <tr th:each="projeto : ${projetos}">
+                <td><span th:text="${projeto.id}"></span></td>
+                <td><span th:text="${projeto.nome}"></span></td>
+                <td><span th:text="${projeto.tipoProjeto}"></span></td>
+                <td><span th:text="${projeto.statusProjeto}"></span></td>
+                <td><span th:text="${projeto.dataInicial}"></span></td>
+                <td><span th:text="${projeto.previsaoTermino}"></span></td>
+                <td><a class="btn-flat" th:href="${(#mvc.url('PC#deletarProjeto').arg(0,projeto.id)).build()}"><i class="orange-text text-darken-2 material-icons left">delete</i></a></span></td>
+                <td><a class="btn-flat" th:href="${(#mvc.url('PC#editarProjeto_carregar').arg(0,projeto.id)).build()}"><i class="orange-text text-darken-2 material-icons left">edit</i></a></span></td>
             </tr>
         </tbody>
 

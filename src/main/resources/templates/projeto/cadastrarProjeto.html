@@ -29,20 +29,30 @@
     </div>
 </nav>
 
-    <h3 style="padding: 0px 0px 10px 40px;">Cadastro de Tarefas</h3>
-    <h3 style="padding: 0px 0px 40px 40px;"><a href="/tarefa/todasTarefas" class="orange darken-2 waves-effect waves-light btn"><i
+    <h3 style="padding: 0px 0px 10px 40px;">Cadastro de Tarefa</h3>
+
+    <h3 style="padding: 0px 0px 40px 40px;"><a href="/projeto/todosProjetos" class="orange darken-2 waves-effect waves-light btn"><i
             class="material-icons left">format_list_bulleted</i>Todas Tarefas</a></h3>
 
-    <form class="container" method="post">
+    <form style="padding: 0px 0px 40px 0px" class="container" method="post">
         <div class="row">
-            <div class="input-field col s3">
+            <div class="input-field col s6">
                 ID: <input type="text" value="" name="id"/>
             </div>
-            <div class="input-field col s9">
+            <div class="input-field col s6">
                 Nome: <input type="text" value="" name="nome"/>
             </div>
-            <div class="input-field col s12">
-                Descrição: <input type="text" value="" name="descricao"/>
+            <div class="input-field col s6">
+                Tipo Projeto: <input type="text" value="" name="tipoProjeto"/>
+            </div>
+            <div class="input-field col s6">
+                Status Projeto: <input type="text" value="" name="statusProjeto"/>
+            </div>
+            <div class="input-field col s6">
+                Data Inicial: <input type="text" value="" name="dataInicial"/>
+            </div>
+            <div class="input-field col s6">
+                Previsão Término: <input type="text" value="" name="previsaoTermino"/>
             </div>
         </div>
         <button class="orange darken-2 waves-effect waves-light btn" type="submit">Salvar</button>
