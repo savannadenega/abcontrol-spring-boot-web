@@ -21,7 +21,7 @@ public class TarefaRepository{
 
             {
                 put(1, new Tarefa(1, "Gerar relatório projetos", "Gerar relatório de todos os projetos em execução neste mês."));
-                put(2, new Tarefa(2, "Criar Projeto Cliente 012", "Criar Projeto para Cliente 012 sobre casa na praia."));
+                put(2, new Tarefa(2, "Criar Tarefa Cliente 012", "Criar Tarefa para Cliente 012 sobre casa na praia."));
                 put(3, new Tarefa(3, "Solicitar orçamento cimento", "Solicitar orçamento de cimento para todas as empresas na lista de fornecedores."));
             }
         };
@@ -31,20 +31,21 @@ public class TarefaRepository{
         return this.tarefas.values();
     }
 
-    public Tarefa getTarefaById(int id){
-        return this.tarefas.get(id);
-    }
-
-    public void removeTarefaById(int id) {
-        this.tarefas.remove(id);
-    }
-
-    public void updateTarefa(Tarefa tarefa) {
-        this.tarefas.put(tarefa.getId(), tarefa);
-    }
-
     public void save(Tarefa tarefa) {
         this.tarefas.put(tarefa.getId(), tarefa);
     }
+
+    public void update(Tarefa tarefa) {
+        this.tarefas.put(tarefa.getId(), tarefa);
+    }
+
+    public void delete(int id) {
+        this.tarefas.remove(id);
+    }
+
+    public Tarefa findTarefaById(int id){
+        return this.tarefas.get(id);
+    }
+
 
 }
