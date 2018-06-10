@@ -8,7 +8,7 @@ _ABControl é um software que irá auxiliar no controle de tarefas, recursos hum
 
 - Spring Boot
 - Spring MVC 
-- Materialize Front Web
+- Materialize Frontend
 
 ------------------------------------------------------------------------------------------------------------------
 
