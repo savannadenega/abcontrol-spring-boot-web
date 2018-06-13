@@ -12,13 +12,13 @@ package com.abc.abcontrol.model;
  */
 public class Material {
     private int id;
-    private Fornecedor fornecedor;
+    private String fornecedor;
     private String tipoMaterial;
     private String descricao;
     private String tipoUnidade;
     private double valorUnidade;
 
-    public Material(int id, Fornecedor fornecedor, String tipoMaterial, String descricao, String tipoUnidade, double valorUnidade) {
+    public Material(int id, String fornecedor, String tipoMaterial, String descricao, String tipoUnidade, double valorUnidade) {
         this.id = id;
         this.fornecedor = fornecedor;
         this.tipoMaterial = tipoMaterial;
@@ -35,11 +35,11 @@ public class Material {
         this.id = id;
     }
 
-    public String getFornecedor() {
+    public String getString() {
         return String.valueOf(fornecedor);
     }
 
-    public void setFornecedor(Fornecedor fornecedor) {
+    public void setString(String fornecedor) {
         this.fornecedor = fornecedor;
     }
 

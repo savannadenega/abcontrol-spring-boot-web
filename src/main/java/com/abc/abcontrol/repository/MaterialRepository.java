@@ -21,8 +21,7 @@ public class MaterialRepository{
     static{
         materiais = new HashMap<Integer, Material>(){
             {
-                put(1, new Material(1, FornecedorRepository.getFornecedorById(1), "", "", "", 0.00));
-//                Material(int id, Fornecedor fornecedor, String tipoMaterial, String descricao, String tipoUnidade, double valorUnidade)
+                put(1, new Material(1, "Juca Materiais LTDA", "", "", "", 0.00));
             }
         };
     }
