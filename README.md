@@ -2,7 +2,7 @@
 
 Projeto para desenvolvimento de uma aplicação web com a utilização de Spring Boot, Spring MVC e Materialize para a disciplina de Desenvolvimento de Software II Unisinos-2018.
 
-_ABControl é um software que irá auxiliar no controle de tarefas, recursos humanos, prazos, materiais, orçamento, estoque e qualidade para uma empresa chamada Construtora ABC que é uma companhia que presta serviços no ramo da construção civil. O software visa melhorar a comunicação com clientes e fornecedores, e melhorar o acesso à informação dos projetos._
+_ABControl é um software que irá auxiliar no controle de tarefa, recursos humanos, prazos, materiais, orçamento, estoque e qualidade para uma empresa chamada Construtora ABC que é uma companhia que presta serviços no ramo da construção civil. O software visa melhorar a comunicação com clientes e fornecedores, e melhorar o acesso à informação dos projetos._
 
 ### Recursos utilizados
 

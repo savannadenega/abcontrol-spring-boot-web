@@ -1,5 +1,7 @@
 package com.abc.abcontrol.controller;
 
+import com.abc.abcontrol.Converter.ProjetoConverter;
+import com.abc.abcontrol.DTO.ProjetoDTO;
 import com.abc.abcontrol.model.Projeto;
 import com.abc.abcontrol.repository.ProjetoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +20,8 @@ public class ProjetoController{
     @Autowired
     ProjetoRepository projetoRepository;
 
+    ProjetoConverter projetoConverter = new ProjetoConverter();
+
     //Retorna formulario para o Create (é GET pois está retornando o formulário)
     @RequestMapping(value="/cadastrarProjeto", method=RequestMethod.GET)
     public String formCadastrarProjeto_carregar() {
@@ -29,12 +33,16 @@ public class ProjetoController{
     //Create
     //é POST pois está cadastrando as infs do formulário
     @RequestMapping(value="/cadastrarProjeto", method=RequestMethod.POST)
-    public String formCadastrarProjeto_cadastrar(Projeto projeto) {
+    public String formCadastrarProjeto_cadastrar(ProjetoDTO projetoDTO) {
+
+        Projeto projeto = new Projeto();
+
+        projetoConverter.converterProjetoDTO(projeto, projetoDTO);
 
         projetoRepository.save(projeto);
 
         //redireciona para a mesma página
-        return "redirect:/projeto/todosProjetos";
+        return "redirect:/projeto/todosProjetos"; //aqui vai para as tarefas
     }
 
     //Read

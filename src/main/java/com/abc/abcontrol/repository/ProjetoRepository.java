@@ -1,13 +1,9 @@
 package com.abc.abcontrol.repository;
 
 import com.abc.abcontrol.model.Projeto;
-import com.abc.abcontrol.model.Tarefa;
 import org.springframework.stereotype.Repository;
 
-import java.util.Collection;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author SavannaDenega
@@ -20,12 +16,27 @@ public class ProjetoRepository{
     static {
 
         projetos = new HashMap<Integer, Projeto>(){
-
             {
-                put(1, new Projeto(1, "Projeto Casa Moderna", "Casa", "Em execução", "01/01/18", "01/12/18"));
-                put(2, new Projeto(2, "Projeto Prédio La Vive", "Prédio", "Em projeto", "02/02/18", "10/12/18"));
-                put(3, new Projeto(3, "Projeto Reforma Restaurante 15", "Reforma", "Em projeto", "01/01/17", "20/08/18"));
-            }
+                List<String> obra = new ArrayList<>();
+                obra.add("Obra 1");
+                List<String> tarefa = new ArrayList<>();
+                tarefa.add("Tarefa 1");
+                List<String> anexo = new ArrayList<>();
+                anexo.add("Projeto Arquitetônico");
+                List<String> equipe = new ArrayList<>();
+                equipe.add("A");
+                List<String> orcamentoGeral = new ArrayList<>();
+                orcamentoGeral.add("20000");
+                List<String> orcamentoSimulacaoGeral = new ArrayList<>();
+                orcamentoSimulacaoGeral.add("17000");
+
+                put(1, new Projeto(1, "Projeto Casa Moderna", "Casa", "Em execução",
+                    "01/01/18", "01/12/18", obra, tarefa, anexo, equipe,
+                    orcamentoGeral, orcamentoSimulacaoGeral));
+                put(2, new Projeto(2, "Projeto Casa Moderna Grande", "Casa", "Em execução",
+                        "01/01/18", "01/12/18", obra, tarefa, anexo, equipe,
+                        orcamentoGeral, orcamentoSimulacaoGeral));
+            };
         };
     }
 
