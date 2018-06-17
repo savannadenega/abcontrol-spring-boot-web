@@ -11,6 +11,18 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Projetos</title>
+
+    <style>
+
+        th{
+            text-align:center;
+        }
+        td{
+            text-align:center;
+        }
+
+    </style>
+
 </head>
 <body>
 
@@ -34,20 +46,27 @@
     <h3 style="padding: 0px 0px 40px 40px;"><a href="/projeto/cadastrarProjeto" class="orange darken-2 waves-effect waves-light btn"><i class="material-icons left">add_circle_outline</i>Cadastrar
     Projeto</a></h3>
 
-    <table style="padding: 0px 0px 50px 0px" class="container">
+    <!--class="container"-->
+    <table>
 
-        <thead>
+        <thead style="padding: 0px 30px 50px 10px;">
             <th>Id</th>
             <th>Nome</th>
             <th>Tipo Projeto</th>
             <th>Status Projeto</th>
             <th>Data Inicial</th>
             <th>Previsão Término</th>
+            <th>Obras</th>
+            <th>Tarefas</th>
+            <th>Anexos</th>
+            <th>Equipes</th>
+            <th>Orçamento Geral</th>
+            <th>Orçamento Simulação Geral</th>
             <th>Deletar</th>
             <th>Editar</th>
         </thead>
 
-        <tbody>
+        <tbody style="padding: 0px 30px 50px 10px;">
             <tr th:each="projeto : ${projetos}">
                 <td><span th:text="${projeto.id}"></span></td>
                 <td><span th:text="${projeto.nome}"></span></td>
@@ -55,6 +74,12 @@
                 <td><span th:text="${projeto.statusProjeto}"></span></td>
                 <td><span th:text="${projeto.dataInicial}"></span></td>
                 <td><span th:text="${projeto.previsaoTermino}"></span></td>
+                <td><span th:text="${projeto.obra}"></span></td>
+                <td><span th:text="${projeto.tarefa}"></span></td>
+                <td><span th:text="${projeto.anexo}"></span></td>
+                <td><span th:text="${projeto.equipe}"></span></td>
+                <td><span th:text="${projeto.orcamentoGeral}"></span></td>
+                <td><span th:text="${projeto.orcamentoSimulacaoGeral}"></span></td>
                 <td><a class="btn-flat" th:href="${(#mvc.url('PC#deletarProjeto').arg(0,projeto.id)).build()}"><i class="orange-text text-darken-2 material-icons left">delete</i></a></span></td>
                 <td><a class="btn-flat" th:href="${(#mvc.url('PC#editarProjeto_carregar').arg(0,projeto.id)).build()}"><i class="orange-text text-darken-2 material-icons left">edit</i></a></span></td>
             </tr>
