@@ -17,27 +17,63 @@ import java.util.Collection;
 
 @Controller
 @RequestMapping(value="/material")
-public class MaterialController {
+public class MaterialController{
 
     @Autowired
     MaterialRepository materialRepository;
 
+    //Retorna formulario para o Create (é GET pois está retornando o formulário)
     @RequestMapping(value="/cadastrarMaterial", method=RequestMethod.GET)
     public String formCadastrarMaterial_carregar() {
-        return "material/cadastrarMaterial";
+
+        //retorna a view formCadastrarTarefa.xml que criamos
+        return "/material/cadastrarMaterial";
     }
 
+    //Create
+    //é POST pois está cadastrando as infs do formulário
     @RequestMapping(value="/cadastrarMaterial", method=RequestMethod.POST)
     public String formCadastrarMaterial_cadastrar(Material material) {
         materialRepository.save(material);
-        return "redirect:/todosMateriais";
+        //redireciona para a mesma página
+        return "redirect:/material/todosMateriais"; //aqui vai para as tarefas
     }
 
+    //Read
     @RequestMapping(value="/todosMateriais", method=RequestMethod.GET)
     public ModelAndView mostraTodosMateriais(){
-        ModelAndView mv = new ModelAndView("material/consultarMateriais");
+        ModelAndView mv = new ModelAndView("material/todosMateriais.html");
         Collection<Material> materiais = materialRepository.findAll();
         mv.addObject("materiais", materiais);
         return mv;
     }
+
+    @RequestMapping("/deletarMaterial")
+    public String deletarMaterial(int id){
+
+        Material material = materialRepository.findMaterialById(id);
+        materialRepository.delete(material.getId());
+
+        return "redirect:/material/todosMateriais";
+    }
+
+    //Update
+    @RequestMapping("/editarMaterial")
+    public ModelAndView editarMaterial_carregar(int id){
+        ModelAndView mv = new ModelAndView("material/editarMaterial.html");
+        Material material = materialRepository.findMaterialById(id);
+        mv.addObject("material", material);
+        return mv;
+    }
+
+    //Update
+    @RequestMapping(value="/editarMaterial", method=RequestMethod.POST)
+    public String editarMaterial_cadastrar(Material material) {
+
+        materialRepository.update(material);
+
+        //redireciona para a mesma página
+        return "redirect:/material/todosMateriais";
+    }
+
 }

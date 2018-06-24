@@ -10,26 +10,29 @@
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Todos materiais</title>
+    <title>Materiais</title>
 </head>
 <body>
 
-    <nav>
-        <div class="grey lighten-2 nav-wrapper">
-            <img style="max-height: 56px; width: auto; height: auto;" src="../images/Logo ABControl - Sem fundo.png" alt="ABControl" />
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><b><a class="orange-text text-darken-2" href="">Todas Tarefas</a></b></li>
-                <li><b><a class="orange-text text-darken-2" href="">Minhas Tarefas</a></b></li>
-                <li><b><a class="orange-text text-darken-2" href="/projeto/todosProjetos">Projetos</a></b></li>
-                <li><b><a class="orange-text text-darken-2" href="/material/todosMateriais">Ferramentas e Materiais</a></b></li>
-                <li><b><a class="orange-text text-darken-2" href="">Gerenciamento de Propostas</a></b></li>
-                <li><b><a class="orange-text text-darken-2" href="">Configurações</a></b></li>
-                <li><a class="orange-text text-darken-2" href=""><i class="orange-text text-darken-2 material-icons left">person</i>Julia</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav>
+    <div class="grey lighten-2 nav-wrapper">
+        <img style="max-height: 56px; width: auto; height: auto;" src="../images/Logo ABControl - Sem fundo.png" alt="ABControl" />
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><b><a class="orange-text text-darken-2" href="">Todas Tarefas</a></b></li>
+            <li><b><a class="orange-text text-darken-2" href="">Minhas Tarefas</a></b></li>
+            <li><b><a class="orange-text text-darken-2" href="/projeto/todosProjetos">Projetos</a></b></li>
+            <li><b><a class="orange-text text-darken-2" href="/material/todosMateriais">Ferramentas e Materiais</a></b></li>
+            <li><b><a class="orange-text text-darken-2" href="">Gerenciamento de Propostas</a></b></li>
+            <li><b><a class="orange-text text-darken-2" href="">Configurações</a></b></li>
+            <li><a class="orange-text text-darken-2" href=""><i class="orange-text text-darken-2 material-icons left">person</i>Julia</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <h3 style="padding: 0px 0px 10px 40px;">Todos materiais</h3>
+
+
+
+    <h3 style="padding: 0px 0px 10px 40px;">Materiais</h3>
     <h3 style="padding: 0px 0px 40px 40px;"><a href="/material/cadastrarMaterial" class="orange darken-2 waves-effect waves-light btn"><i class="material-icons left">add_circle_outline</i>Cadastrar material</a></h3>
     <table class="container">
 
@@ -40,6 +43,8 @@
             <th>Unidade</th>
             <th>Valor unitário</th>
             <th>Fornecedor</th>
+            <th>Deletar</th>
+            <th>Editar</th>
         </thead>
 
         <tbody>
@@ -50,6 +55,8 @@
                 <td><span th:text="${material.tipoUnidade}"></span></td>
                 <td><span th:text="${material.valorUnidade}"></span></td>
                 <td><span th:text="${material.fornecedor}"></span></td>
+                <td><a class="btn-flat" th:href="${(#mvc.url('MC#deletarMaterial').arg(0,material.id)).build()}"><i class="orange-text text-darken-2 material-icons left">delete</i></a></td>
+                <td><a class="btn-flat" th:href="${(#mvc.url('MC#editarMaterial_carregar').arg(0,material.id)).build()}"><i class="orange-text text-darken-2 material-icons left">edit</i></a></span></td>
             </tr>
         </tbody>
 

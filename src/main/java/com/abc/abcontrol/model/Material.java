@@ -12,7 +12,7 @@ package com.abc.abcontrol.model;
  */
 public class Material {
     private int id;
-    private String fornecedor;
+    private String fornecedor; //TO DO usar classe Fornecedor
     private String tipoMaterial;
     private String descricao;
     private String tipoUnidade;
@@ -35,11 +35,11 @@ public class Material {
         this.id = id;
     }
 
-    public String getString() {
-        return String.valueOf(fornecedor);
+    public String getFornecedor() {
+        return fornecedor;
     }
 
-    public void setString(String fornecedor) {
+    public void setFornecedor(String fornecedor) {
         this.fornecedor = fornecedor;
     }
 
@@ -74,7 +74,5 @@ public class Material {
     public void setValorUnidade(double valorUnidade) {
         this.valorUnidade = valorUnidade;
     }
-    
-    
     
 }

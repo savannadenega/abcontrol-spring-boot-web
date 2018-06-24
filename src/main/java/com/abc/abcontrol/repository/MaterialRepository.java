@@ -30,20 +30,20 @@ public class MaterialRepository{
         return this.materiais.values();
     }
 
-    public Material getMaterialById(int id){
-        return this.materiais.get(id);
+    public void save(Material material) {
+        this.materiais.put(material.getId(), material);
     }
 
-    public void removeMaterialById(int id) {
+    public void update(Material material) {
+        this.materiais.put(material.getId(), material);
+    }
+
+    public void delete(int id) {
         this.materiais.remove(id);
     }
 
-    public void updateMaterial(Material material) {
-        this.materiais.put(material.getId(), material);
-    }
-
-    public void save(Material material) {
-        this.materiais.put(material.getId(), material);
+    public Material findMaterialById(int id){
+        return this.materiais.get(id);
     }
 
 }
