@@ -33,7 +33,7 @@ Os casos de uso que foram desenvolvidos no trabalho foram:
 ### Para fazer os testes dos casos de uso em funcionamento:
 
 - Testes CRUD Manter Projetos:  
-Acessar o link `http://localhost:8080/projeto/todosProjetos`, que é o menu Projetos, e o CRUD está disponível na página  
+Acessar o link `http://localhost:8080/projeto/todosProjetos`, que é o menu Projetos, e o CRUD está disponível na página;
       
 - Testes CRUD Manter Ferramentas e Materiais:  
-Acessar o link`http://localhost:3000/material/todosMateriais`, que é o menu Ferramentas e Materiais, e o CRUD está disponível na página  
+Acessar o link`http://localhost:3000/material/todosMateriais`, que é o menu Ferramentas e Materiais, e o CRUD está disponível na página.
