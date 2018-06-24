@@ -83,24 +83,4 @@ var ButtonForms = (function () {
 
     }
 
-
-    /*
-    var obras = documento.getElementByClass("obra")
-
-obra[0]
-VM364:1 Uncaught ReferenceError: obra is not defined
-    at <anonymous>:1:1
-(anonymous) @ VM364:1
-obras[0]
-<input type=​"text" value name=​"obra1" class=​"obra">​
-obras[0].style.display="none"
-"none"
-obras[0].style.display="block"
-"block"
-obras[0].style.display="none"
-"none"
-
-adiciona um botão que execute estas ações
-*/
-
 })();
