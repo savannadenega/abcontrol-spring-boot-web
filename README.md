@@ -16,7 +16,7 @@ Os casos de uso que foram desenvolvidos no trabalho foram:
 - Spring MVC 
 - Materialize Frontend
 
-### Print da aplicação
+### Prints da aplicação
 
 - UC_011 - Caso de uso Manter Projetos  
 
