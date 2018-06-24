@@ -6,6 +6,10 @@ _ABControl é um software que irá auxiliar no controle de tarefa, recursos huma
 
 Em um primeiro momento realizamos a construção de uma documentação para o projeto, com a utilização de vários ferramentas de documentação para construção de sistemas, como documento de requisitos funcionais e não funcionais, diagrama de modelo de casos de uso, casos de usos completos do sistema, diagrama de domínio, diagrama de classes, diagrama de atividades, diagrama de sequência, diagrama de componentes, etc. 
 
+Os casos de uso que foram desenvolvidos no trabalho foram:
+- UC_011 - Caso de uso Manter Projetos
+- UC_007 - Caso de uso Manter Ferramentas e Materiais
+
 ### Recursos utilizados
 
 - Spring Boot
@@ -28,5 +32,8 @@ Em um primeiro momento realizamos a construção de uma documentação para o pr
 
 ### Para fazer os testes dos casos de uso em funcionamento:
 
-      - Testes CRUD Manter Projetos: Acessar o link `http://localhost:8080/projeto/todosProjetos`, que é o menu Projetos, e o CRUD está disponível na página
-      - Testes CRUD Manter Ferramentas e Materiais: Acessar o link`http://localhost:3000/material/todosMateriais`, que é o menu Ferramentas e Materiais, e o CRUD está disponível na página 
+- Testes CRUD Manter Projetos:  
+Acessar o link `http://localhost:8080/projeto/todosProjetos`, que é o menu Projetos, e o CRUD está disponível na página  
+      
+- Testes CRUD Manter Ferramentas e Materiais:  
+Acessar o link`http://localhost:3000/material/todosMateriais`, que é o menu Ferramentas e Materiais, e o CRUD está disponível na página  
