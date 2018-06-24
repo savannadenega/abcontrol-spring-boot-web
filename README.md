@@ -14,7 +14,7 @@ Os casos de uso que foram desenvolvidos no trabalho foram:
 
 - Spring Boot
 - Spring MVC 
-- Materialize Frontend
+- Materialize
 
 ### Prints da aplicação
 
