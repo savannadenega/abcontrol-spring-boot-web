@@ -22,6 +22,10 @@ Os casos de uso que foram desenvolvidos no trabalho foram:
 
 ![UC_011 - Caso de uso Manter Projetos](readme_images/Caso-de-uso-Manter-projetos.png)
 
+- UC_007 - Caso de uso Manter Ferramentas e Materiais 
+
+![UC_011 - Caso de uso Manter Materiais](readme_images/Caso-de-uso-Manter-materiais.png)
+
 
 ------------------------------------------------------------------------------------------------------------------
 
