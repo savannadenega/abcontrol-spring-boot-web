@@ -2,8 +2,6 @@ package com.abc.abcontrol.Converter;
 
 import com.abc.abcontrol.DTO.ProjetoDTO;
 import com.abc.abcontrol.model.Projeto;
-import org.springframework.beans.factory.annotation.Configurable;
-import org.springframework.context.annotation.Bean;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,19 +35,19 @@ public class ProjetoConverter{
         }
 
         List<String> obra = new ArrayList<>();
-        if (!projetoDTO.getObra1().isEmpty()){
+        if(!projetoDTO.getObra1().isEmpty()) {
             obra.add(projetoDTO.getObra1());
         }
-        if (!projetoDTO.getObra1().isEmpty()){
+        if(!projetoDTO.getObra2().isEmpty()) {
             obra.add(projetoDTO.getObra2());
         }
-        if (!projetoDTO.getObra1().isEmpty()){
+        if(!projetoDTO.getObra3().isEmpty()) {
             obra.add(projetoDTO.getObra3());
         }
-        if (!projetoDTO.getObra1().isEmpty()){
+        if(!projetoDTO.getObra4().isEmpty()) {
             obra.add(projetoDTO.getObra4());
         }
-        if (!projetoDTO.getObra1().isEmpty()){
+        if(!projetoDTO.getObra5().isEmpty()) {
             obra.add(projetoDTO.getObra5());
         }
         projeto.setObra(obra);
@@ -109,38 +107,38 @@ public class ProjetoConverter{
         projeto.setEquipe(equipe);
 
         List<String> orcamentoGeral = new ArrayList<>();
-        if (!projetoDTO.getOrcamentoGeral().isEmpty()){
-            orcamentoGeral.add(projetoDTO.getOrcamentoGeral());
+        if (!projetoDTO.getOrcamentoGeral1().isEmpty()){
+            orcamentoGeral.add(projetoDTO.getOrcamentoGeral1());
         }
-        if (!projetoDTO.getOrcamentoGera2().isEmpty()){
-            orcamentoGeral.add(projetoDTO.getOrcamentoGera2());
+        if (!projetoDTO.getOrcamentoGeral2().isEmpty()){
+            orcamentoGeral.add(projetoDTO.getOrcamentoGeral2());
         }
-        if (!projetoDTO.getOrcamentoGera3().isEmpty()){
-            orcamentoGeral.add(projetoDTO.getOrcamentoGera3());
+        if (!projetoDTO.getOrcamentoGeral3().isEmpty()){
+            orcamentoGeral.add(projetoDTO.getOrcamentoGeral3());
         }
-        if (!projetoDTO.getOrcamentoGera4().isEmpty()){
-            orcamentoGeral.add(projetoDTO.getOrcamentoGera4());
+        if (!projetoDTO.getOrcamentoGeral4().isEmpty()){
+            orcamentoGeral.add(projetoDTO.getOrcamentoGeral4());
         }
-        if (!projetoDTO.getOrcamentoGera5().isEmpty()){
-            orcamentoGeral.add(projetoDTO.getOrcamentoGera5());
+        if (!projetoDTO.getOrcamentoGeral5().isEmpty()){
+            orcamentoGeral.add(projetoDTO.getOrcamentoGeral5());
         }
         projeto.setOrcamentoGeral(orcamentoGeral);
 
         List<String> orcamentoSimulacaoGeral = new ArrayList<>();
-        if (!projetoDTO.getOrcamentoSimulacaoGeral().isEmpty()){
-            orcamentoSimulacaoGeral.add(projetoDTO.getOrcamentoSimulacaoGeral());
+        if (!projetoDTO.getOrcamentoSimulacaoGeral1().isEmpty()){
+            orcamentoSimulacaoGeral.add(projetoDTO.getOrcamentoSimulacaoGeral1());
         }
-        if (!projetoDTO.getOrcamentoSimulacaoGera2().isEmpty()){
-            orcamentoSimulacaoGeral.add(projetoDTO.getOrcamentoSimulacaoGera2());
+        if (!projetoDTO.getOrcamentoSimulacaoGeral2().isEmpty()){
+            orcamentoSimulacaoGeral.add(projetoDTO.getOrcamentoSimulacaoGeral2());
         }
-        if (!projetoDTO.getOrcamentoSimulacaoGera3().isEmpty()){
-            orcamentoSimulacaoGeral.add(projetoDTO.getOrcamentoSimulacaoGera3());
+        if (!projetoDTO.getOrcamentoSimulacaoGeral3().isEmpty()){
+            orcamentoSimulacaoGeral.add(projetoDTO.getOrcamentoSimulacaoGeral3());
         }
-        if (!projetoDTO.getOrcamentoSimulacaoGera4().isEmpty()){
-            orcamentoSimulacaoGeral.add(projetoDTO.getOrcamentoSimulacaoGera4());
+        if (!projetoDTO.getOrcamentoSimulacaoGeral4().isEmpty()){
+            orcamentoSimulacaoGeral.add(projetoDTO.getOrcamentoSimulacaoGeral4());
         }
-        if (!projetoDTO.getOrcamentoSimulacaoGera5().isEmpty()){
-            orcamentoSimulacaoGeral.add(projetoDTO.getOrcamentoSimulacaoGera5());
+        if (!projetoDTO.getOrcamentoSimulacaoGeral5().isEmpty()){
+            orcamentoSimulacaoGeral.add(projetoDTO.getOrcamentoSimulacaoGeral5());
         }
         projeto.setOrcamentoSimulacaoGeral(orcamentoSimulacaoGeral);
 

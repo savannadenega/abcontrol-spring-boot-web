@@ -36,10 +36,10 @@
 <span style="padding: 0px 0px 40px 40px;"><a href="/material/cadastrarMaterial" class="orange darken-2 waves-effect waves-light btn">
         <i class="material-icons left">add_circle_outline</i>Cadastrar material</a></span>
         
-<form class="container" method="post">
+<form style="padding: 40px 0px 40px 0px" class="container" method="post">
     <div class="row">
         <div class="input-field col s3">
-            id: <input type="text" th:field="*{material.id}" name="id"/>
+            ID: <input type="text" th:field="*{material.id}" name="id"/>
         </div>
         <div class="input-field col s9">
             Descrição: <input type="text" th:field="*{material.descricao}" name="descricao"/>

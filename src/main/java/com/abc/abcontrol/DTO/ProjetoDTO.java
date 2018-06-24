@@ -33,19 +33,19 @@ public class ProjetoDTO{
     private String anexo4;
     private String anexo5;
 
-    private String orcamentoGeral;
-    private String orcamentoGera2;
-    private String orcamentoGera3;
-    private String orcamentoGera4;
-    private String orcamentoGera5;
+    private String orcamentoGeral1;
+    private String orcamentoGeral2;
+    private String orcamentoGeral3;
+    private String orcamentoGeral4;
+    private String orcamentoGeral5;
 
-    private String orcamentoSimulacaoGeral;
-    private String orcamentoSimulacaoGera2;
-    private String orcamentoSimulacaoGera3;
-    private String orcamentoSimulacaoGera4;
-    private String orcamentoSimulacaoGera5;
+    private String orcamentoSimulacaoGeral1;
+    private String orcamentoSimulacaoGeral2;
+    private String orcamentoSimulacaoGeral3;
+    private String orcamentoSimulacaoGeral4;
+    private String orcamentoSimulacaoGeral5;
 
-    public ProjetoDTO(int id, String nome, String tipoProjeto, String statusProjeto, String dataInicial, String previsaoTermino, String obra1, String obra2, String obra3, String obra4, String obra5, String tarefa1, String tarefa2, String tarefa3, String tarefa4, String tarefa5, String equipe1, String equipe2, String equipe3, String equipe4, String equipe5, String anexo1, String anexo2, String anexo3, String anexo4, String anexo5, String orcamentoGeral, String orcamentoGera2, String orcamentoGera3, String orcamentoGera4, String orcamentoGera5, String orcamentoSimulacaoGeral, String orcamentoSimulacaoGera2, String orcamentoSimulacaoGera3, String orcamentoSimulacaoGera4, String orcamentoSimulacaoGera5) {
+    public ProjetoDTO(int id, String nome, String tipoProjeto, String statusProjeto, String dataInicial, String previsaoTermino, String obra1, String obra2, String obra3, String obra4, String obra5, String tarefa1, String tarefa2, String tarefa3, String tarefa4, String tarefa5, String equipe1, String equipe2, String equipe3, String equipe4, String equipe5, String anexo1, String anexo2, String anexo3, String anexo4, String anexo5, String orcamentoGeral1, String orcamentoGeral2, String orcamentoGeral3, String orcamentoGeral4, String orcamentoGeral5, String orcamentoSimulacaoGeral1, String orcamentoSimulacaoGeral2, String orcamentoSimulacaoGeral3, String orcamentoSimulacaoGeral4, String orcamentoSimulacaoGeral5) {
         this.id = id;
         this.nome = nome;
         this.tipoProjeto = tipoProjeto;
@@ -72,16 +72,16 @@ public class ProjetoDTO{
         this.anexo3 = anexo3;
         this.anexo4 = anexo4;
         this.anexo5 = anexo5;
-        this.orcamentoGeral = orcamentoGeral;
-        this.orcamentoGera2 = orcamentoGera2;
-        this.orcamentoGera3 = orcamentoGera3;
-        this.orcamentoGera4 = orcamentoGera4;
-        this.orcamentoGera5 = orcamentoGera5;
-        this.orcamentoSimulacaoGeral = orcamentoSimulacaoGeral;
-        this.orcamentoSimulacaoGera2 = orcamentoSimulacaoGera2;
-        this.orcamentoSimulacaoGera3 = orcamentoSimulacaoGera3;
-        this.orcamentoSimulacaoGera4 = orcamentoSimulacaoGera4;
-        this.orcamentoSimulacaoGera5 = orcamentoSimulacaoGera5;
+        this.orcamentoGeral1 = orcamentoGeral1;
+        this.orcamentoGeral2 = orcamentoGeral2;
+        this.orcamentoGeral3 = orcamentoGeral3;
+        this.orcamentoGeral4 = orcamentoGeral4;
+        this.orcamentoGeral5 = orcamentoGeral5;
+        this.orcamentoSimulacaoGeral1 = orcamentoSimulacaoGeral1;
+        this.orcamentoSimulacaoGeral2 = orcamentoSimulacaoGeral2;
+        this.orcamentoSimulacaoGeral3 = orcamentoSimulacaoGeral3;
+        this.orcamentoSimulacaoGeral4 = orcamentoSimulacaoGeral4;
+        this.orcamentoSimulacaoGeral5 = orcamentoSimulacaoGeral5;
     }
 
     public int getId() {
@@ -292,83 +292,83 @@ public class ProjetoDTO{
         this.anexo5 = anexo5;
     }
 
-    public String getOrcamentoGeral() {
-        return orcamentoGeral;
+    public String getOrcamentoGeral1() {
+        return orcamentoGeral1;
     }
 
-    public void setOrcamentoGeral(String orcamentoGeral) {
-        this.orcamentoGeral = orcamentoGeral;
+    public void setOrcamentoGeral1(String orcamentoGeral1) {
+        this.orcamentoGeral1 = orcamentoGeral1;
     }
 
-    public String getOrcamentoGera2() {
-        return orcamentoGera2;
+    public String getOrcamentoGeral2() {
+        return orcamentoGeral2;
     }
 
-    public void setOrcamentoGera2(String orcamentoGera2) {
-        this.orcamentoGera2 = orcamentoGera2;
+    public void setOrcamentoGeral2(String orcamentoGeral2) {
+        this.orcamentoGeral2 = orcamentoGeral2;
     }
 
-    public String getOrcamentoGera3() {
-        return orcamentoGera3;
+    public String getOrcamentoGeral3() {
+        return orcamentoGeral3;
     }
 
-    public void setOrcamentoGera3(String orcamentoGera3) {
-        this.orcamentoGera3 = orcamentoGera3;
+    public void setOrcamentoGeral3(String orcamentoGeral3) {
+        this.orcamentoGeral3 = orcamentoGeral3;
     }
 
-    public String getOrcamentoGera4() {
-        return orcamentoGera4;
+    public String getOrcamentoGeral4() {
+        return orcamentoGeral4;
     }
 
-    public void setOrcamentoGera4(String orcamentoGera4) {
-        this.orcamentoGera4 = orcamentoGera4;
+    public void setOrcamentoGeral4(String orcamentoGeral4) {
+        this.orcamentoGeral4 = orcamentoGeral4;
     }
 
-    public String getOrcamentoGera5() {
-        return orcamentoGera5;
+    public String getOrcamentoGeral5() {
+        return orcamentoGeral5;
     }
 
-    public void setOrcamentoGera5(String orcamentoGera5) {
-        this.orcamentoGera5 = orcamentoGera5;
+    public void setOrcamentoGeral5(String orcamentoGeral5) {
+        this.orcamentoGeral5 = orcamentoGeral5;
     }
 
-    public String getOrcamentoSimulacaoGeral() {
-        return orcamentoSimulacaoGeral;
+    public String getOrcamentoSimulacaoGeral1() {
+        return orcamentoSimulacaoGeral1;
     }
 
-    public void setOrcamentoSimulacaoGeral(String orcamentoSimulacaoGeral) {
-        this.orcamentoSimulacaoGeral = orcamentoSimulacaoGeral;
+    public void setOrcamentoSimulacaoGeral1(String orcamentoSimulacaoGeral1) {
+        this.orcamentoSimulacaoGeral1 = orcamentoSimulacaoGeral1;
     }
 
-    public String getOrcamentoSimulacaoGera2() {
-        return orcamentoSimulacaoGera2;
+    public String getOrcamentoSimulacaoGeral2() {
+        return orcamentoSimulacaoGeral2;
     }
 
-    public void setOrcamentoSimulacaoGera2(String orcamentoSimulacaoGera2) {
-        this.orcamentoSimulacaoGera2 = orcamentoSimulacaoGera2;
+    public void setOrcamentoSimulacaoGeral2(String orcamentoSimulacaoGeral2) {
+        this.orcamentoSimulacaoGeral2 = orcamentoSimulacaoGeral2;
     }
 
-    public String getOrcamentoSimulacaoGera3() {
-        return orcamentoSimulacaoGera3;
+    public String getOrcamentoSimulacaoGeral3() {
+        return orcamentoSimulacaoGeral3;
     }
 
-    public void setOrcamentoSimulacaoGera3(String orcamentoSimulacaoGera3) {
-        this.orcamentoSimulacaoGera3 = orcamentoSimulacaoGera3;
+    public void setOrcamentoSimulacaoGeral3(String orcamentoSimulacaoGeral3) {
+        this.orcamentoSimulacaoGeral3 = orcamentoSimulacaoGeral3;
     }
 
-    public String getOrcamentoSimulacaoGera4() {
-        return orcamentoSimulacaoGera4;
+    public String getOrcamentoSimulacaoGeral4() {
+        return orcamentoSimulacaoGeral4;
     }
 
-    public void setOrcamentoSimulacaoGera4(String orcamentoSimulacaoGera4) {
-        this.orcamentoSimulacaoGera4 = orcamentoSimulacaoGera4;
+    public void setOrcamentoSimulacaoGeral4(String orcamentoSimulacaoGeral4) {
+        this.orcamentoSimulacaoGeral4 = orcamentoSimulacaoGeral4;
     }
 
-    public String getOrcamentoSimulacaoGera5() {
-        return orcamentoSimulacaoGera5;
+    public String getOrcamentoSimulacaoGeral5() {
+        return orcamentoSimulacaoGeral5;
     }
 
-    public void setOrcamentoSimulacaoGera5(String orcamentoSimulacaoGera5) {
-        this.orcamentoSimulacaoGera5 = orcamentoSimulacaoGera5;
+    public void setOrcamentoSimulacaoGeral5(String orcamentoSimulacaoGeral5) {
+        this.orcamentoSimulacaoGeral5 = orcamentoSimulacaoGeral5;
     }
 }
